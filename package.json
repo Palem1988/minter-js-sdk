@@ -11,7 +11,9 @@
     "lint": "eslint --ext .js ./",
     "lint:fix": "eslint --ext .js ./ --fix",
     "test": "jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "exam:serve": "vue-cli-service serve",
+    "exam:build": "vue-cli-service build"
   },
   "repository": {
     "type": "git",
@@ -38,12 +40,18 @@
     "secp256k1": "latest"
   },
   "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.0-rc.12",
+    "@vue/cli-service": "^3.0.0-rc.12",
     "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "jest": "^23.4.2"
+    "jest": "^23.4.2",
+    "vue": "^2.5.17",
+    "less": "^3.0.4",
+    "less-loader": "^4.1.0",
+    "vue-template-compiler": "^2.5.17"
   }
 }
